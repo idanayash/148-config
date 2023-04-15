@@ -6,13 +6,3 @@ spring:
         uri: lb://srv-b/
         predicates:
         - Path=/srv-b/**
-        default-filters:
-        - DedupeResponseHeader=Access-Control-Allow-Origin
-      # globalcors:
-      #   cors-configurations:
-      #     "[/**]":
-      #       allowCredentials: true
-      #       allowedOrigins: "*"
-      #       allowedHeaders: "Origin, X-Requested-With, Content-Type, Accept, Content-Length, TOKEN, Authorization"
-      #       allowedMethods: "GET, POST, PATCH, PUT, DELETE, OPTIONS"
-      #       maxAge: 3628800
