@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: srv-b
+        uri: https://srv-b
+        predicates:
+        - Cookie=mycookie,mycookievalue
