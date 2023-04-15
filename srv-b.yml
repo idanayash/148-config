@@ -1,2 +1,10 @@
 server:
   port: 0
+spring:
+  cloud:
+    consul:
+      discovery:
+        instanceId: srv-b:${random.value}
+        health:
+          check:
+            interval: 15s
