@@ -5,4 +5,4 @@ spring:
     consul:
       discovery:
         instanceId: srv-b:${random.value}
-        healthCheckInterval: 15s
+        healthCheckInterval: 20s
