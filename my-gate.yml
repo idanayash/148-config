@@ -6,3 +6,4 @@ spring:
         uri: http://srv-b
         predicates:
         - Cookie=mycookie,mycookievalue
+        - Path=/srv-b/
