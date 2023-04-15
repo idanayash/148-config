@@ -3,7 +3,6 @@ spring:
     gateway:
       routes:
       - id: srv-b
-        uri: http://localhost
+        uri: lb://srv-b
         predicates:
-        - Cookie=mycookie,mycookievalue
-        - Path=/srv-b/
+        - Path=/srv-b/**
