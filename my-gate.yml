@@ -3,6 +3,6 @@ spring:
     gateway:
       routes:
       - id: srv-b
-        uri: https://srv-b
+        uri: http://srv-b
         predicates:
         - Cookie=mycookie,mycookievalue
